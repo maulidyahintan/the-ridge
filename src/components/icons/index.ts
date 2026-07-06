@@ -1,0 +1,6 @@
+export { WhatsAppIcon } from './WhatsAppIcon'
+export { FacebookIcon } from './FacebookIcon'
+export { InstagramIcon } from './InstagramIcon'
+export { LinkedInIcon } from './LinkedInIcon'
+export { TikTokIcon } from './TikTokIcon'
+export { YouTubeIcon } from './YouTubeIcon'
