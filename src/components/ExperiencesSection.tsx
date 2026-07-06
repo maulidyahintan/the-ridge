@@ -16,7 +16,7 @@ export function ExperiencesSection() {
         ref={ref}
         initial="hidden"
         animate={isInView ? 'visible' : 'hidden'}
-        className="max-w-330 mx-auto grid md:grid-cols-2 gap-5 lg:gap-6"
+        className="grid md:grid-cols-2 gap-5 lg:gap-6"
       >
         {CARDS.map((card, index) => {
           const isHovered = hoveredIndex === index
@@ -52,10 +52,12 @@ export function ExperiencesSection() {
 
               {!isHovered && (
                 <div className="absolute bottom-0 left-0 right-0 p-8">
-                  <h3 className="font-display text-white text-4xl lg:text-5xl font-light">
+                  <h3 className="font-display text-white text-3xl lg:text-4xl font-semibold">
                     {card.title}
                   </h3>
-                  <p className="font-source text-white/80 text-sm italic mt-1">{card.subtitle}</p>
+                  <p className="font-serif text-white/85 text-sm italic mt-1 font-normal">
+                    {card.subtitle}
+                  </p>
                 </div>
               )}
 
@@ -74,7 +76,7 @@ export function ExperiencesSection() {
                       transition={{ duration: 0.3, delay: 0.05 }}
                       className="absolute top-8 left-8 right-8"
                     >
-                      <p className="font-display text-white text-2xl lg:text-3xl italic font-light leading-snug">
+                      <p className="font-serif text-white text-xl lg:text-2xl italic font-normal">
                         {card.hoverText}
                       </p>
                     </motion.div>

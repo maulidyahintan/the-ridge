@@ -42,14 +42,14 @@ export function AboutSection() {
   }
 
   return (
-    <section className="relative bg-ridge-cream py-16">
-      <div className="grid lg:grid-cols-[1fr_660px] xl:grid-cols-[1fr_708px]">
+    <section className="relative bg-ridge-cream py-16 px-6 sm:px-12 lg:px-20 xl:px-32">
+      <div className="grid md:grid-cols-2 lg:grid-cols-[1fr_580px] gap-6 md:gap-8 lg:gap-10 items-center">
         <motion.div
           ref={ref}
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
-          className="flex flex-col justify-center px-6 py-8 sm:px-12 lg:px-20 xl:px-32 lg:py-16"
+          className="flex flex-col justify-center py-8 lg:py-16"
         >
           <motion.h2 variants={itemVariants} className="font-display text-ridge-espresso mb-8">
             <span className="text-[4rem] sm:text-[5rem] lg:text-[6rem] font-semibold leading-[90%]">
@@ -84,9 +84,9 @@ export function AboutSection() {
           variants={imageVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
-          className="relative px-6 pb-12 sm:px-12 lg:px-0 lg:w-auto lg:h-auto lg:aspect-auto lg:flex lg:items-center lg:justify-end lg:pr-20 xl:pr-32"
+          className="relative lg:w-auto lg:h-auto lg:aspect-auto lg:flex lg:items-center lg:justify-end"
         >
-          <div className="relative w-full aspect-580/680 lg:w-145 lg:h-170 lg:aspect-auto">
+          <div className="relative w-full aspect-580/680 md:max-w-full lg:w-145 lg:h-170 lg:aspect-auto">
             <Image
               src="/images/View-3.png"
               alt="Aerial view of Sayan Ridge rice terraces and Ayung River Valley"
