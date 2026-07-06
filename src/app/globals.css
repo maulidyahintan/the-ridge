@@ -1,29 +1,29 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   /* Ridge Brand Colors - Warm Earth Tones */
-  --ridge-cream: #F5F0E8;
-  --ridge-cream-light: #FAF7F2;
-  --ridge-parchment: #E8DDD0;
-  --ridge-sand: #C8B89A;
-  --ridge-taupe: #9E8E7E;
-  --ridge-brown: #6B5744;
-  --ridge-espresso: #3D2B1F;
-  --ridge-bark: #2C1F15;
+  --ridge-cream: #f5f0e8;
+  --ridge-cream-light: #faf7f2;
+  --ridge-parchment: #e8ddd0;
+  --ridge-sand: #c8b89a;
+  --ridge-taupe: #9e8e7e;
+  --ridge-brown: #6b5744;
+  --ridge-espresso: #3d2b1f;
+  --ridge-bark: #2c1f15;
 
   /* Ridge Forest Greens */
-  --ridge-forest: #2D3D2E;
-  --ridge-sage: #6B7C5E;
-  --ridge-moss: #4A5C3E;
-  --ridge-fern: #8A9E78;
+  --ridge-forest: #2d3d2e;
+  --ridge-sage: #6b7c5e;
+  --ridge-moss: #4a5c3e;
+  --ridge-fern: #8a9e78;
 
   /* Ridge Accent Colors */
-  --ridge-gold: #C4A96D;
-  --ridge-gold-light: #D4BC8A;
+  --ridge-gold: #c4a96d;
+  --ridge-gold-light: #d4bc8a;
 
   /* Neutrals */
-  --ridge-charcoal: #1A1A18;
-  --ridge-white: #FEFEFE;
+  --ridge-charcoal: #1a1a18;
+  --ridge-white: #fefefe;
 }
 
 @theme inline {
@@ -57,31 +57,31 @@
   --font-body: var(--font-inter);
 
   /* Typography Scale */
-  --font-size-xs: 0.75rem;       /* 12px */
-  --font-size-sm: 0.875rem;      /* 14px */
-  --font-size-base: 1rem;        /* 16px */
-  --font-size-lg: 1.125rem;      /* 18px */
-  --font-size-xl: 1.25rem;       /* 20px */
-  --font-size-2xl: 1.5rem;       /* 24px */
-  --font-size-3xl: 1.875rem;     /* 30px */
-  --font-size-4xl: 2.25rem;      /* 36px */
-  --font-size-5xl: 3rem;         /* 48px */
-  --font-size-6xl: 3.75rem;      /* 60px */
-  --font-size-7xl: 4.5rem;       /* 72px */
-  --font-size-8xl: 6rem;         /* 96px */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-lg: 1.125rem; /* 18px */
+  --font-size-xl: 1.25rem; /* 20px */
+  --font-size-2xl: 1.5rem; /* 24px */
+  --font-size-3xl: 1.875rem; /* 30px */
+  --font-size-4xl: 2.25rem; /* 36px */
+  --font-size-5xl: 3rem; /* 48px */
+  --font-size-6xl: 3.75rem; /* 60px */
+  --font-size-7xl: 4.5rem; /* 72px */
+  --font-size-8xl: 6rem; /* 96px */
 
   /* Spacing Scale - Generous for Luxury Feel */
-  --spacing-section-sm: 4rem;    /* 64px */
-  --spacing-section: 6rem;       /* 96px */
-  --spacing-section-lg: 8rem;    /* 128px */
-  --spacing-section-xl: 10rem;   /* 160px */
+  --spacing-section-sm: 4rem; /* 64px */
+  --spacing-section: 6rem; /* 96px */
+  --spacing-section-lg: 8rem; /* 128px */
+  --spacing-section-xl: 10rem; /* 160px */
 
   /* Border Radius */
-  --radius-sm: 0.25rem;          /* 4px */
-  --radius: 0.5rem;              /* 8px */
-  --radius-md: 0.75rem;          /* 12px */
-  --radius-lg: 1rem;             /* 16px */
-  --radius-xl: 1.5rem;           /* 24px */
+  --radius-sm: 0.25rem; /* 4px */
+  --radius: 0.5rem; /* 8px */
+  --radius-md: 0.75rem; /* 12px */
+  --radius-lg: 1rem; /* 16px */
+  --radius-xl: 1.5rem; /* 24px */
 
   /* Shadows - Subtle Luxury */
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -96,7 +96,9 @@ body {
   background: var(--ridge-cream-light);
   color: var(--ridge-espresso);
   font-family: var(--font-body);
-  font-feature-settings: "kern" 1, "liga" 1;
+  font-feature-settings:
+    'kern' 1,
+    'liga' 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

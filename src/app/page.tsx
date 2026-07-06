@@ -9,10 +9,10 @@ export default function Home() {
           Luxury Villa Resort
         </p>
         <p className="font-body text-base md:text-lg text-ridge-brown max-w-2xl leading-relaxed">
-          Experience unparalleled luxury in our exclusive Bali-style villa resort,
-          where nature meets refined elegance.
+          Experience unparalleled luxury in our exclusive Bali-style villa resort, where nature
+          meets refined elegance.
         </p>
       </main>
     </div>
-  );
+  )
 }
