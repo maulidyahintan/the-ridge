@@ -42,14 +42,14 @@ export function AboutSection() {
   }
 
   return (
-    <section className="relative bg-ridge-cream-light min-h-[500px] md:min-h-[600px] lg:h-screen">
-      <div className="grid lg:grid-cols-[1fr_660px] xl:grid-cols-[1fr_708px] min-h-[500px] md:min-h-[600px] lg:h-screen">
+    <section className="relative bg-ridge-cream py-16">
+      <div className="grid lg:grid-cols-[1fr_660px] xl:grid-cols-[1fr_708px]">
         <motion.div
           ref={ref}
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
-          className="flex flex-col justify-center px-6 py-16 sm:px-12 lg:px-20 xl:px-32 lg:py-24"
+          className="flex flex-col justify-center px-6 py-8 sm:px-12 lg:px-20 xl:px-32 lg:py-16"
         >
           <motion.h2 variants={itemVariants} className="font-display text-ridge-espresso mb-8">
             <span className="text-[4rem] sm:text-[5rem] lg:text-[6rem] font-semibold leading-[90%]">
