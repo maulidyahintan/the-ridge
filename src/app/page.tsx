@@ -4,6 +4,7 @@ import {
   ExperiencesSection,
   TestimonialsSection,
   InstagramSection,
+  FooterSection,
 } from '@/components'
 import { OutroSection } from '@/components/OutroSection'
 
@@ -16,6 +17,7 @@ export default function Home() {
       <TestimonialsSection />
       <OutroSection />
       <InstagramSection />
+      <FooterSection />
     </main>
   )
 }
