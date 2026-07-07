@@ -1,4 +1,10 @@
-import { HeroSection, AboutSection, ExperiencesSection, TestimonialsSection } from '@/components'
+import {
+  HeroSection,
+  AboutSection,
+  ExperiencesSection,
+  TestimonialsSection,
+  InstagramSection,
+} from '@/components'
 import { OutroSection } from '@/components/OutroSection'
 
 export default function Home() {
@@ -9,6 +15,7 @@ export default function Home() {
       <ExperiencesSection />
       <TestimonialsSection />
       <OutroSection />
+      <InstagramSection />
     </main>
   )
 }

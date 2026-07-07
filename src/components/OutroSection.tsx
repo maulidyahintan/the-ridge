@@ -69,7 +69,7 @@ export function OutroSection() {
           animate={isInView ? 'visible' : 'hidden'}
           className="flex flex-col justify-center py-8 lg:py-16"
         >
-          <motion.h2 variants={itemVariants} className="font-display text-ridge-espresso mb-8">
+          <motion.h2 variants={itemVariants} className="font-heading text-ridge-espresso mb-8">
             <span className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold">
               Crafted by the Valley
             </span>

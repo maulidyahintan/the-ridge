@@ -68,7 +68,7 @@ export function TestimonialsSection() {
       </button>
 
       <div className="mx-auto max-w-3xl">
-        <h2 className="font-display text-ridge-espresso text-3xl lg:text-4xl font-light text-center mb-12 lg:mb-16">
+        <h2 className="font-heading text-ridge-espresso text-3xl lg:text-4xl font-light text-center mb-12 lg:mb-16">
           Guests&rsquo; Chronicles
         </h2>
 
@@ -86,7 +86,7 @@ export function TestimonialsSection() {
             >
               {/* Avatar circle */}
               <div className="relative w-16 h-16 rounded-full bg-ridge-sand flex items-center justify-center mx-auto mb-3">
-                <span className="font-display text-ridge-brown text-2xl font-semibold">
+                <span className="font-heading text-ridge-brown text-2xl font-semibold">
                   {currentTestimonial.name.charAt(0)}
                 </span>
                 <div className="absolute -bottom-0.5 -right-0.5 w-5 h-5 rounded-full bg-ridge-sage flex items-center justify-center">

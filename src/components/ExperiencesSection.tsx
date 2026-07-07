@@ -52,7 +52,7 @@ export function ExperiencesSection() {
 
               {!isHovered && (
                 <div className="absolute bottom-0 left-0 right-0 p-8">
-                  <h3 className="font-display text-white text-3xl lg:text-4xl font-semibold">
+                  <h3 className="font-heading text-white text-3xl lg:text-4xl font-semibold">
                     {card.title}
                   </h3>
                   <p className="font-serif text-white/85 text-sm italic mt-1 font-normal">

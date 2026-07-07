@@ -51,7 +51,7 @@ export function AboutSection() {
           animate={isInView ? 'visible' : 'hidden'}
           className="flex flex-col justify-center py-8 lg:py-16"
         >
-          <motion.h2 variants={itemVariants} className="font-display text-ridge-espresso mb-8">
+          <motion.h2 variants={itemVariants} className="font-heading text-ridge-espresso mb-8">
             <span className="text-[4rem] sm:text-[5rem] lg:text-[6rem] font-semibold leading-[90%]">
               W
             </span>
