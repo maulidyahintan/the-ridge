@@ -43,20 +43,20 @@ export function OutroSection() {
 
   return (
     <section className="relative bg-ridge-cream-light py-16 px-6 sm:px-12 lg:px-20 xl:px-32">
-      <div className="grid md:grid-cols-2 lg:grid-cols-[580px_1fr] gap-6 md:gap-8 lg:gap-10 items-center">
+      <div className="grid md:grid-cols-2 gap-6 md:gap-8 lg:gap-10 items-center">
         <motion.div
           variants={imageVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
-          className="relative lg:w-auto lg:h-auto lg:aspect-auto lg:flex lg:items-center lg:justify-start"
+          className="relative"
         >
-          <div className="relative w-full aspect-520/534 md:max-w-full lg:w-145 lg:h-170 lg:aspect-auto">
+          <div className="relative w-full aspect-520/534">
             <Image
               src="/images/outro.jpg"
               alt="The Ridge River View"
               fill
               className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 520px"
+              sizes="(max-width: 768px) 100vw, 50vw"
               priority={false}
             />
           </div>

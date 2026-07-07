@@ -43,7 +43,7 @@ export function AboutSection() {
 
   return (
     <section className="relative bg-ridge-cream py-16 px-6 sm:px-12 lg:px-20 xl:px-32">
-      <div className="grid md:grid-cols-2 lg:grid-cols-[1fr_580px] gap-6 md:gap-8 lg:gap-10 items-center">
+      <div className="grid md:grid-cols-2 gap-6 md:gap-8 lg:gap-10 items-center">
         <motion.div
           ref={ref}
           variants={containerVariants}
@@ -84,15 +84,15 @@ export function AboutSection() {
           variants={imageVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
-          className="relative lg:w-auto lg:h-auto lg:aspect-auto lg:flex lg:items-center lg:justify-end"
+          className="relative"
         >
-          <div className="relative w-full aspect-580/680 md:max-w-full lg:w-145 lg:h-170 lg:aspect-auto">
+          <div className="relative w-full aspect-580/680">
             <Image
               src="/images/View-3.png"
               alt="Aerial view of Sayan Ridge rice terraces and Ayung River Valley"
               fill
               className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 580px"
+              sizes="(max-width: 768px) 100vw, 50vw"
               priority={false}
             />
           </div>
