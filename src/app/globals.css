@@ -2,14 +2,14 @@
 
 :root {
   /* Ridge Brand Colors - Warm Earth Tones */
-  --ridge-cream: #f5f0e8;
-  --ridge-cream-light: #faf7f2;
-  --ridge-parchment: #e8ddd0;
-  --ridge-sand: #c8b89a;
-  --ridge-taupe: #9e8e7e;
-  --ridge-brown: #6b5744;
-  --ridge-espresso: #3d2b1f;
-  --ridge-bark: #2c1f15;
+  --ridge-cream: #fff4e2;
+  --ridge-cream-light: #f7f5ee;
+  --ridge-parchment: #d6cbb9;
+  --ridge-sand: #e8dfd3;
+  --ridge-taupe: #645541;
+  --ridge-brown: #64553f;
+  --ridge-espresso: #433526;
+  --ridge-bark: #423525;
 
   /* Ridge Forest Greens */
   --ridge-forest: #2d3d2e;
