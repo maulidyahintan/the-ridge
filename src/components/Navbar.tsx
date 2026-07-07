@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Mail } from 'lucide-react'
 import dynamic from 'next/dynamic'
@@ -13,10 +13,12 @@ import { WhatsAppIcon } from '@/components/icons'
 
 const MegaMenu = dynamic(() => import('@/components/ui/mega-menu'), { ssr: false })
 
-function TopBar({ onOpen }: { onOpen: () => void }) {
+function TopBar({ onOpen, isNavVisible }: { onOpen: () => void; isNavVisible: boolean }) {
   return (
-    <nav className="fixed left-0 right-0 top-0 z-50 bg-ridge-bark">
-      <div className="mx-auto max-w-[1920px] px-6 lg:px-12">
+    <nav
+      className={`fixed left-0 right-0 top-0 z-50 bg-ridge-bark transition-transform duration-300 ease-in-out ${isNavVisible ? 'translate-y-0' : '-translate-y-full'}`}
+    >
+      <div className="mx-auto max-w-[1920px] px-12 lg:px-20">
         <div className="flex h-18 items-center justify-between lg:h-20">
           <Link href="/" className="shrink-0">
             <Image
@@ -145,14 +147,33 @@ function DrawerPanel({ onClose, pathname }: { onClose: () => void; pathname: str
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const [isNavVisible, setIsNavVisible] = useState(true)
+  const lastScrollY = useRef(0)
   const pathname = usePathname()
 
   const close = useCallback(() => setIsOpen(false), [])
   useMenuDrawer(isOpen, close)
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+      if (currentScrollY < 80) {
+        setIsNavVisible(true)
+      } else if (currentScrollY > lastScrollY.current) {
+        setIsNavVisible(false)
+      } else {
+        setIsNavVisible(true)
+      }
+      lastScrollY.current = currentScrollY
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <>
-      <TopBar onOpen={() => setIsOpen(true)} />
+      <TopBar onOpen={() => setIsOpen(true)} isNavVisible={isNavVisible || isOpen} />
 
       <AnimatePresence>
         {isOpen && (
