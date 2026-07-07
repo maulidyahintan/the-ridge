@@ -37,8 +37,8 @@ export function FooterSection() {
 
       {/* Section 2 - Featured In Bar */}
       <section className="bg-ridge-parchment border-t border-white">
-        <div className="py-8 px-6 sm:px-12 lg:px-20 xl:px-32">
-          <div className="flex flex-wrap items-center justify-center gap-32">
+        <div className="py-8 px-6 sm:px-12 lg:px-20 xl:px-32 overflow-x-auto">
+          <div className="flex flex-nowrap items-center justify-start lg:justify-center gap-10 lg:gap-32 min-w-max lg:min-w-0">
             <span className="font-body text-ridge-bark tracking-[0.5px] text-sm">Featured in:</span>
 
             {PRESS_LOGOS.map(logo => (
