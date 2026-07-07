@@ -8,7 +8,7 @@ import {
   Inter,
 } from 'next/font/google'
 import './globals.css'
-import { Navbar } from '@/components'
+import { Navbar, StickyCTA } from '@/components'
 
 const cormorant = Cormorant_Garamond({
   variable: '--font-cormorant',
@@ -70,6 +70,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col pt-18 lg:pt-20">
         <Navbar />
+        <StickyCTA />
         {children}
       </body>
     </html>
